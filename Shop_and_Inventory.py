@@ -21,3 +21,16 @@ shop = {
 }
 
 starter_items = ("Squire Sword", "Cloth Armour", "Wooden Shield")
+
+while True:
+
+    print("Menu")
+    print("----------")
+    print("1. View Inventory")
+    print("2. View Shop")
+    print("3. Buy Item")
+    print("4. Sell Item")
+    print("5. View Gold")
+    print("6. Leave")
+
+    choice = input("Choose an option: ")
