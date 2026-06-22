@@ -19,3 +19,5 @@ shop = {
     "Square Shield": 25,
     "Ring of Strength": 50
 }
+
+starter_items = ("Squire Sword", "Cloth Armour", "Wooden Shield")
