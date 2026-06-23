@@ -34,3 +34,14 @@ while True:
     print("6. Leave")
 
     choice = input("Choose an option: ")
+
+    if choice == "1":
+        print("Your Inventory:")
+        if len(player_inventory) == 0:
+            print("Inventory is empty.")
+        
+        else:
+            for item in player_inventory:
+                print("-", item)
+
+        input("Press Enter to continue...")
