@@ -45,3 +45,26 @@ while True:
                 print("-", item)
 
         input("Press Enter to continue...")
+    
+    elif choice == "2":
+        print("Dragon's Hoard Shop:")
+        for item, price in shop.items():
+            print(f"{item}: {price} gold")
+        
+        input("Press Enter to continue...")
+    
+    elif choice == "3":
+        item = input("Enter item to buy: ")
+
+        if item in shop:
+            price = shop[item]
+
+            if gold >= price:
+                gold -= price
+                player_inventory.append(item)
+                print(f"You bought {item}!")
+            else:
+                print("Not enough gold.")
+        else:
+            print(f"We don't sell that here {player_name}!")
+        input("Press Enter to continue...")
