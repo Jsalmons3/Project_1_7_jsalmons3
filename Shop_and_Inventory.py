@@ -84,3 +84,10 @@ while True:
     elif choice == "5":
         print(f"You currently have {gold} gold.")
         input("Press Enter to continue...")
+    
+    elif choice == "6":
+        print(f"Thank you for visiting the Dragon's Hoard {player_name}!")
+        break
+
+    else:
+        print("That's not a choice adventurer!")
