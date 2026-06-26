@@ -68,3 +68,19 @@ while True:
         else:
             print(f"We don't sell that here {player_name}!")
         input("Press Enter to continue...")
+    
+    elif choice == "4":
+        item = input("Enter item to sell: ")
+
+        if item in player_inventory:
+            player_inventory.remove(item)
+            sell_price = 10
+            gold += sell_price
+            print(f"You sold {item} for {sell_price} gold.")
+        else:
+            print("You don't own that item.")
+        input("Press Enter to continue...")
+
+    elif choice == "5":
+        print(f"You currently have {gold} gold.")
+        input("Press Enter to continue...")
